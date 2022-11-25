@@ -456,3 +456,37 @@ margin-left: -25rem;
       margin-top: 3rem;
       font-size: 1rem;
     }
+
+
+.main{
+    display: flex;
+    padding: 20px,20px,20px,20px;
+}
+.logo {
+    
+    padding-left: 20px;
+}
+.seconddiv li{
+    list-style: none;
+    padding-left: 70px;
+}
+.thirddiv li{
+    list-style: none;
+    padding-left: 70px;
+}
+.fourthdiv li{
+    list-style: none;
+    padding-left: 70px;
+}
+.li{
+    list-style: none;
+    padding-left: 70px;
+}
+.main{
+    display: flex;
+    
+}
+.buttom{
+    
+    text-align: center;
+}
