@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+:root{
+  --background: #F5F5F5;
+  --black: #000000;
+--white: #F0F0F0;
+--ash: #E1E1E1;
+--blue-green: #7ED5BB;
+--icon-color: #38D4CFE5;
+
+
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: white;
+}
+/*=========++++++++++++++++_________________------------- */
+/* nav bar */
+/* === nab bar styling :: am trying to give the nav space using flex and inline-block */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+}
+li{
+  margin-left: 100px;
+  list-style: none;
+}
+ul
+li
+a{
+  text-decoration: none;
+  color:var(--black)
+}
+/* ====== button style =========== */
+#btn{
+  border: 2px solid var(--black);
+  background: var(--black);
+  color: var(--white);
+  padding: 10px;
+  margin: 10px;
+  width: 120px;
+  text-align: center;
+  border-radius: 5px;
+}
+#btn
+a{
+  text-align: center;
+  text-decoration: none;
+  color: var(--white);
+}
+/* === end ==== */
+/* br */
+/* section 2 hero page */
+section 
+#head
+{
+  max-width: 500px;
+  font-size: 40px;
+  margin-left: 70px;
+}
+section{
+  margin-top: 100px;
+}
+section
+#txt{
+  max-width: 500px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+section 
+#bts{
+  width: 130px;
+  margin-left: 10px;
+  align-items: center;
+  height: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  background: var(--black);
+  color: var(--white);
+  border-radius: 5px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.pay{
+  display: flex;
+  margin-left: 70px;
+  margin-top: 70px;
+}
+.sec-grid{
+  float: right;
+  margin-top: -400px;
+  margin-right: 120px;
+  /* width: 200px; */
+}
+.sec-grid
+img{
+  margin-right: 30px;
+  width: 400px;
+  margin-top: -100px;
+}
+/* ===== hover section==== */
+
+li:hover{
+  text-decoration: dotted;
+}
+/* === end ==== */
+
+/* header and nav bar media queary */
+
+@media (max-width: 768px){
+  li{
+    display: none;
+  }
+  #btn{
+    display: none;
+  }
+  .sec-grid
+  img{
+    margin-top: 500px;
+    margin-right: -105px;
+    width: 270px;
+  }
+  #head{
+    font-size: 7px;
+    width: 300px;
+    margin-right: 200px;
+  }
+  section{
+    margin-top: -23px;
+    margin-left: -38px;
+  }
+  .wrapper{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+   }
+}
+/* ==== Tablet ===== */
+@media (max-width: 1024px){
+  li{
+  display: none;
+  }
+  #btn{
+    display: none;
+  }
+  .sec-grid
+  img{
+    margin-top: -105px;
+    width: 300px;
+  }
+  #head{
+    font-size: 7px;
+    width: 300px;
+    margin-right: 200px;
+  }
+  section{
+    margin-top: -23px;
+    margin-left: -38px;
+  }
+  #txt{
+    width: 400px;
+  }
+}
+/* ===========section 2================== */
+
+#p{
+  margin-top: 100px;
+  color: var(--blue-green);
+  margin-left: 50px;
+  font-size: 22px;
+}
+#h3{
+  margin-left: 50px;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.wrapper{
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 50px;
+  margin-left: 50px;
+}
+.card1{
+  width: 320px;
+  height: 250px;
+  background: var(--black);
+  color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+text-align: center;
+}
+.c1
+img
+{
+  margin-top: -30px;  
+background: linear-gradient(138.15deg, #12FFF7 42.17%, rgba(211, 171, 110, 0) 128.54%);
+box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.6);
+  margin-left: 30px;
+  border-radius: 50%;
+}
+.card2{
+  width: 320px;
+  height: 250px;
+  background: var(--ash);
+  color: var(--black);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.c2
+img
+{
+  margin-top: -100px;
+  /* margin-left: 50px; */
+  background: linear-gradient(138.15deg, 
+#12FFF7 42.17%, rgba(211, 171, 110, 0) 
+128.54%);
+box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.6);
+  width: 50px;
+  border-radius: 10%;
+}
+.card3{
+  width: 320px;
+  height: 250px;
+  background: var(--ash);
+  color: var(--black);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.c3
+img
+{
+  margin-top: -100px;
+  /* margin-left: 10px; */
+  background: linear-gradient(138.15deg, 
+#12FFF7 42.17%, rgba(211, 171, 110, 0) 
+128.54%);
+box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.6);
+  width: 50px;
+  border-radius: 10%;
+}
+/* ===== the grid media query===== */
+@media (max-width: 768px){
+  .wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    justify-content: center;
+  }
+  .card1{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card2{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card1{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card2{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card3{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #p{
+    margin-top: 50px;
+    text-align: center;
+  }
+  #h3{
+    margin-top: 20px;
+    text-align: center;
+  }
+ 
+}
+/* ==== tablet 2 ======= */
+@media (max-width:1024px){
+  .wrapper{
+    display: grid;
+  grid-template-columns: repeat(2,1fr);
+  }
+}
+/* ======= middle section =========== */
+.middle{
+  background: rgba(0, 0, 0, 0.04);;
+/* position: absolute; */
+width: 100%;
+
+}
+.middle h4{
+  font-size: 30px;
+}
+.middle #do{
+  font: 30px;
+}
+.whole{
+  margin: 50px;
+}
+.slide1{
+  background: linear-gradient(273.37deg, rgba(255, 255, 255, 0.89) 17.42%, rgba(255, 255, 255, 0.15px6944) 57.2%, rgba(255, 255, 255, 0) 84.54%);
+  box-shadow: 2px 2px 2px 2px #00000033;
+max-width: 320px;
+/* max-height: 80px; */
+border-radius: 10px;
+margin-left: 50px;
+margin-top: 4rem;
+}
+.slide1 h5{
+  margin-left: 50px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.slide1 p{
+  text-align: center;
+  margin-top: -30px;
+  max-width: 300px;
+  margin-left: 20px;
+}
+.slide1 img{
+  width: 30px;
+  margin-top: -24px;
+;position: absolute;
+}
+.slide2{
+  background: linear-gradient(273.37deg, rgba(255, 255, 255, 0.89) 17.42%, rgba(255, 2
+255, 0.15px6944) 57.2%, rgba(255, 255, 255, 0) 84.54%);
+  box-shadow: 2px 2px 2px 2px #00000033;
+max-width: 320px;
+/* max-height: 80px; */
+border-radius: 10px;
+margin-left: 50px;
+margin-top: 4rem;
+}
+.slide2 h5{
+  margin-left: 50px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.slide2 p{
+  text-align: center;
+  margin-top: -30px;
+  max-width: 300px;
+  margin-left: 20px;
+}
+.slide2 img{
+  width: 30px;
+  margin-top: -24px;
+;position: absolute;
+}
+.slide3{
+  background: linear-gradient(273.37deg, rgba(255, 255, 255, 0.89) 17.42%, rgba(255, 2
+255, 0.15px6944) 57.2%, rgba(255, 255, 255, 0) 84.54%);
+  box-shadow: 2px 2px 2px 2px #00000033;
+max-width: 320px;
+/* max-height: 80px; */
+border-radius: 10px;
+margin-left: 50px;
+margin-top: 4rem;
+}
+.slide3 h5{
+  margin-left: 50px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.slide3 p{
+  text-align: center;
+  margin-top: -30px;
+  max-width: 300px;
+  margin-left: 20px;
+}
+.slide3 img{
+  width: 30px;
+  margin-top: -24px;
+;position: absolute;
+}
+
+.second > img{
+  margin-left: 800px;
+  margin-top: -500px;
+}
+.third > #good{
+  width: 30rem;
+  font-size: 1.2rem;
+  margin-left: 3rem;
+}
+.third > h3{
+  font-size: 1.5rem;
+  margin-left: 3rem;
+}
+ .third > span{
+color: #7ED5BB;  
+margin-left: 3rem;
+}
+.eclipse{
+  float: right;
+}
+ .a1{
+margin-top: -18rem;
+position: absolute;
+margin-left: -25rem;
+}
+.a2{
+  margin-left: -25rem;
+  position: absolute;
+  }
+.a3{
+  margin-top: -10rem;
+  position: absolute;
+  margin-left: -10rem;
+  }
+  .a4{
+    margin-top: -18rem;
+    position: absolute;
+    }
+    .third :is(.mem2){
+      background-color: #000000;
+      color: #fff;
+      border: 1px solid #000;
+      border-radius: 2px;
+      position: absolute;
+      width: 7rem;
+      height: 2rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5rem;
+      margin-top: 3rem;
+      font-size: 1rem;
+    }

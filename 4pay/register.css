@@ -1,0 +1,41 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 100vh;
+}
+.wrapper :is(img){
+  background-color: black;
+  height: 100%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+input{
+  /* margin-top: 1rem; */
+  width: 17rem;
+  height: 30px;
+  background-color: whitesmoke;
+  outline: none;
+  border: none;
+}
+legend{
+  margin-top: 1rem;
+  font-size: 20px;
+}
+input::placeholder{
+  font-size: 20px;
+
+}
+.sec{
+  background-color: black;
+}
